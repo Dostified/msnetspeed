@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - MS Net Speed</title>
+    <link rel="icon" type="image/png" href="msnetspeed.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="brand">
+                <img src="msnetspeed.png" alt="MS Net Speed Logo">
+                <span>MS Net Speed</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="privacy-policy.html" class="active">Privacy Policy</a></li>
+                <li><a href="terms-of-use.html">Terms of Use</a></li>
+                <li><a href="mailto:contact.dostified@gmail.com" class="btn-primary">Contact Us</a></li>
+                <li><button id="theme-toggle" class="theme-toggle-btn">🌙 Dark</button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Legal Content Container -->
+    <main class="page-container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: October 2026 • MS Net Speed</p>
+
+        <div class="legal-content">
+            <h2>1. Overview & Commitment</h2>
+            <p>MS Net Speed ("we", "our", or "us") is dedicated to providing real-time network speed monitoring while protecting user privacy. This Privacy Policy outlines how data is handled when you use the MS Net Speed Android application.</p>
+
+            <h2>2. Information We Process</h2>
+            <p>MS Net Speed operates entirely on your Android device. We process only technical network traffic counters required to compute live speed:</p>
+            <ul>
+                <li><strong>Network Byte Counters:</strong> Transmitted (TX) and received (RX) byte totals are queried locally via standard Android <code>TrafficStats</code> APIs to calculate real-time download and upload speeds.</li>
+                <li><strong>Active Connection Type:</strong> Network interface status is queried locally via <code>ConnectivityManager</code> to identify Wi-Fi, Cellular, Hotspot, or Ethernet connections.</li>
+            </ul>
+
+            <h2>3. Zero Personal Data Collection & Guarantee</h2>
+            <p>We strictly do <strong>NOT</strong> collect, store, transmit, or sell any personal data. Specifically:</p>
+            <ul>
+                <li>No browsing history, URLs, or web search queries are tracked.</li>
+                <li>No IP addresses, location data, or device identifiers are recorded.</li>
+                <li>No personal data is ever shared with third-party advertisers or data brokers.</li>
+            </ul>
+
+            <h2>4. System Permissions Explanation</h2>
+            <p>To deliver real-time speed monitoring, MS Net Speed requests the following standard Android permissions:</p>
+            <ul>
+                <li><code>ACCESS_NETWORK_STATE</code>: Required to detect active connection types (Wi-Fi, Mobile, Hotspot).</li>
+                <li><code>FOREGROUND_SERVICE</code>: Required to maintain a background service to compute speed every second without interruption.</li>
+                <li><code>SYSTEM_ALERT_WINDOW</code>: Optional permission used only if you enable the Floating Speed Overlay to draw speed text directly in the status bar area.</li>
+                <li><code>RECEIVE_BOOT_COMPLETED</code>: Required to automatically restart the speed monitoring service when your device powers on.</li>
+            </ul>
+
+            <h2>5. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to maintain compliance with Android OS updates and Google Play Developer Policies. Updated policies will be posted on this page.</p>
+
+            <div class="contact-box">
+                <h3>✉️ Contact Us</h3>
+                <p>If you have any questions or feedback regarding this Privacy Policy, please contact the developer:</p>
+                <p>Developer: <strong>Mukesh Saw</strong></p>
+                <p>Official Contact Email: <a href="mailto:contact.dostified@gmail.com">contact.dostified@gmail.com</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="msnetspeed.png" alt="MS Net Speed Logo">
+                <span>MS Net Speed</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-use.html">Terms of Use</a>
+                <a href="mailto:contact.dostified@gmail.com">Contact</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 MS Net Speed. Developed by Mukesh. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="theme.js"></script>
+</body>
+</html>
